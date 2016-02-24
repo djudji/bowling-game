@@ -1,3 +1,4 @@
+ruby "2.3.0"
 source 'https://rubygems.org'
 
 
@@ -36,7 +37,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  # gem 'byebug'
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'faker', '~> 1.4.3'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy', '~> 2.4.2'
+  gem 'selenium-webdriver', '~> 2.43.0'
 end
 
 group :development do
