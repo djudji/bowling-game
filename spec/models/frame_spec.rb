@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Frame, :type => :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
+  let(:f) {f = Frame.new}
+  
+  it('can roll pins down') do
+    f.roll pins
+  end
 end

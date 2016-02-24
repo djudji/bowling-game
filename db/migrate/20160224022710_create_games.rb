@@ -1,7 +1,7 @@
 class CreateGames < ActiveRecord::Migration
   def change
     create_table :games do |t|
-      t.integer :current_frame
+      t.integer :game_score
 
       t.timestamps null: false
     end
